@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/630c6d06e04c0987fd26a706
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "abdul rohim tantio",
+    "email" : "abdulromhim@gmail.com",
+    "gender" : "male"
+}
+
+###
+PATCH http://localhost:5000/users/630c6d06e04c0987fd26a706
+Content-Type: application/json
+
+{
+    "name" : "tio",
+    "email" : "tio@gmail.com",
+    "gender" : "male"
+}
+
+###
+DELETE http://localhost:5000/users/630c6d06e04c0987fd26a706
+
